@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="KMV_CAFE.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Login</title>
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.356)),
+          url(cafe.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .loginbox {
+        width: 320px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.884);
+        color: black;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: 0 0 15px #333;
+      }
+      .logo {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        left: calc(50% -50px);
+        margin-left: 100px;
+      }
+      .loginbox h1 {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .loginbox hr {
+        border: none;
+        color: black;
+        border-radius: 10px;
+      }
+      .loginbox label {
+        font-size: 18px;
+      }
+      .loginbox input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .loginbox input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 1px solid black;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: black;
+        font-size: 16px;
+      }
+      .loginbox button[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: black;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+      .loginbox button[type="submit"]:hover {
+        cursor: pointer;
+        background: rgb(33, 14, 85);
+        color: white;
+      }
+      .signup a {
+        color: rgb(60, 4, 60);
+        text-decoration: none;
+      }
+      .signup a:hover {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="d-flex justify-content-center">
+          <div class="loginbox">
+            <form class="container-fluid" action="login.php" method="post">
+              <img src="KMV_CAFE.png" class="logo" />
+              <br />
+              <div class="mb-3">
+                <br />
+                <h1 align="center">Login</h1>
+                <hr />
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="signup">
+                Don't have an account?
+                <a href="signup.html">Sign Up</a>
+              </div>
+              <br />
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">LOGIN</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

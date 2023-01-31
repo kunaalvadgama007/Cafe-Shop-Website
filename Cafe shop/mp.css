@@ -1,0 +1,86 @@
+img{
+    height: 400px;
+    width: 100px;
+}
+.card{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin:15px 30px 15px 30px;
+    height: 100%;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.carousel{
+    margin:0px 30px;
+
+}
+.btn{
+    background-color: rgb(147, 99, 64) ;
+    color: whitesmoke;
+}
+.btn:hover{
+    background-color: bisque;
+    color: black;
+}
+.nav-item:hover{
+    color: bisque;
+}
+.dets{
+    margin-left: 15px;
+    color: black;
+}
+#map{
+    height: 400px;
+   
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 50px;
+}
+#map1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin: 10px;
+  
+}
+.address{
+    text-align: center;
+    
+}
+.card-title{
+    color: rgb(147, 99, 64);
+    text-decoration: underline;
+}
+.card-text{
+    color: rgb(111, 69, 19) ;
+    font-style: italic;
+    
+}
+.image{
+    display: inline-flex;
+}
+#special{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.code{
+    color: white;
+    text-decoration: none;
+}
